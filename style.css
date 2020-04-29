@@ -1,0 +1,38 @@
+#foodlist{
+    display: flex;
+    flex-direction: row;
+    margin: .5em;
+    justify-content: center;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    flex-direction:column;
+    /* border-radius: 20%; */
+    border: solid black;
+    padding: .5em;
+    margin: .5em;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+   color: red;
+   margin: 1em;
+}
+
+h4 {
+    color:red;
+    margin: 1em;
+}
+
+h5 {
+    color: palevioletred;
+    margin: 1em;
+}
+
