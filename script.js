@@ -39,14 +39,19 @@
                     } else {
                         food.calPerServing = "no calories per serving listed"
                     }
+
                     if (productInfo.product.nutriments.fat_serving) {
                         food.fatPerServing = productInfo.product.nutriments.fat_serving
-                    } else {
-                        food.fatPerServing = "no fat per serving listed"
+                    } else if(productInfo.product.nutriments.fat){
+                        food.fatPerServing = productInfo.product.nutriments.fat
+                        } else { 
+                            food.fatPerServing = "no fat per serving listed"
                     }
 
                     if (productInfo.product.nutriments.sugars_serving) {
                         food.sugarPerServing = productInfo.product.nutriments.sugars_serving
+                    } else if(productInfo.product.nutriments.sugars) {
+                        food.sugarPerServing = productInfo.product.nutriments.sugars
                     } else {
                         food.sugarPerServing = "no sugar per serving listed"
                     }
